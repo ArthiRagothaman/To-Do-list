@@ -20,9 +20,11 @@ function TodoApp() {
 	return (
 		<div className="todo-app">
 			<form onSubmit={handleSubmit}>
+				<h2 className="heading">To-Do List</h2>
 				<input
 					className="todo-input"
 					type="text"
+					placeholder="Enter Your Text"
 					value={input}
 					onChange={(e) => setInput(e.target.value)}
 				/>
